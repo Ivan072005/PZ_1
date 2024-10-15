@@ -1,0 +1,81 @@
+/* Загальні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffefd5; /* Персиковий фон сторінки */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Стилі для форми реєстрації */
+  .registration {
+    background-color: #f8f9fa; /* Світло-сірий фон форми */
+    padding: 30px; /* Більше внутрішніх відступів */
+    border-radius: 15px; /* Більш виражені закруглені кути */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Глибша тінь */
+    width: 360px; /* Ширша форма */
+    position: relative;
+    border: 2px solid #007bff; /* Синя обводка форми */
+  }
+  
+  .registration__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #007bff; /* Яскравий синій заголовок */
+    text-transform: uppercase; /* Заголовок великими літерами */
+  }
+  
+  .registration__form-group {
+    margin-bottom: 20px;
+  }
+  
+  .registration__label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  /* Стилі для полів вводу */
+  .registration__input {
+    width: 100%;ц
+    padding: 12px; /* Збільшені внутрішні відступи */
+    border: 2px solid #007bff; /* Синя обводка полів вводу */
+    border-radius: 8px; /* Більш виражені закруглені кути */
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: #e9f5ff; /* Легкий синій фон для полів вводу */
+    transition: all 0.3s ease; /* Плавна анімація для фокусу */
+  }
+  
+  .registration__input:focus {
+    border-color: #ff4500; /* Змінюється на яскравий помаранчевий при фокусі */
+    background-color: #ffefd5; /* Зміна кольору фону при фокусі */
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 69, 0, 0.5); /* Помаранчева тінь при фокусі */
+  }
+  
+  /* Стилі для кнопки */
+  .registration__button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff; /* Яскраво-синя кнопка */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Плавна анімація при наведенні */
+  }
+  
+  .registration__button:hover {
+    background-color: #ff4500; /* Помаранчева кнопка при наведенні */
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+    box-shadow: 0 8px 16px rgba(255, 69, 0, 0.4);
+  
