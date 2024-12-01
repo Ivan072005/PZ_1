@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.weekly-planner {
+    display: grid;
+    grid-template-columns: 1fr 4fr; /* 1 колонка для задач, 4 для дней недели */
+    gap: 20px;
+    width: calc(100% - 40px);
+    max-width: 1600px;
+    background-color: #ffffff;
+    border: 5px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Три колонки: заголовок, поля ввода, чекбоксы */
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+    gap: 20px;
+}
+
+.week-of,
+.habit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+h1 {
+    font-size: 2.5em;
+    justify-self: start;
+}
+
+.checklist {
+    display: flex;
+    flex-direction: column; /* Чекбоксы вертикально */
+    align-items: flex-end;
+}
+
+.input-field {
+    border: none;
+    border-bottom: 1px solid black;
+    width: 150px; /* Ширина полей ввода */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.left-column h2 {
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    font-size: 1em;
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Три колонки для дней недели */
+    grid-template-rows: repeat(2, 1fr); /* Два ряда */
+    gap: 20px;
+}
+
+.day {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+/* Стили для текстового поля */
+textarea.input-field {
+    background-color: #ffffff; /* Белый фон */
+    color: #333333; /* Темно-серый текст */
+    border: 1px solid #ccc; /* Серая рамка */
+    width: 100%;
+    height: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease; /* Плавное изменение цвета рамки */
+}
+
+/* Изменение цвета рамки при наведении */
+textarea.input-field:hover {
+    border-color: #007bff; /* Синий цвет рамки при наведении */
+}
+
+/* Изменение цвета рамки при фокусе */
+textarea.input-field:focus {
+    border-color: #ff6347; /* Оранжево-красный цвет рамки при фокусе */
+    outline: none; /* Убираем стандартное выделение браузера */
+}

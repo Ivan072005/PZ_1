@@ -1,0 +1,61 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("../assets/images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #f1faee;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.header__logo img {
+  width: 50px;
+  height: 50px;
+}
+.header__title {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card__content {
+  text-align: center;
+}
+.card__image {
+  width: 150px;
+  margin-bottom: 20px;
+}
+.card__message {
+  font-size: 1.2rem;
+  color: #a8dadc;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.footer__text {
+  font-size: 0.9rem;
+  color: #f1faee;
+}/*# sourceMappingURL=main.css.map */

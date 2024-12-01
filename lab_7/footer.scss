@@ -1,0 +1,11 @@
+.footer {
+    @include flex-center;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+  
+    &__text {
+      font-size: 0.9rem;
+      color: $text-color;
+    }
+  }
+  

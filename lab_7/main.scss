@@ -1,0 +1,27 @@
+// Змінні
+$primary-color: #e63946;
+$secondary-color: #a8dadc;
+$text-color: #f1faee;
+$background-image: url('../assets/images/background.jpg');
+
+// Міксини
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Загальні стилі
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: $background-image no-repeat center center fixed;
+  background-size: cover;
+  color: $text-color;
+}
+
+// Підключення блоків
+@import 'header';
+@import 'card';
+@import 'footer';
